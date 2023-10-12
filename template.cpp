@@ -2,7 +2,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define GET_FASTER ios_base::sync_with_stdio(false);cin.tie(NULL);
-#define endl 'n'
+#define endl '\n'
 typedef long long int ll;
 #define F first
 #define S second
@@ -12,7 +12,8 @@ typedef long long int ll;
 #define ld double
 const int N = 1e6 + 5;
 const ll MOD = 1e9 + 7;
-
+const ll mx = LLONG_MAX;
+const ll mn = LLONG_MIN;
 typedef vector<int> vi;
 typedef pair<int, int> pi;
 /*
@@ -125,6 +126,7 @@ int DP(int n, int last) {
 }
 
 
+
 void permute(string& a, int l, int r, set<string>& uniquePermutations) {
 	if (l == r) {
 		uniquePermutations.insert(a);
@@ -137,15 +139,17 @@ void permute(string& a, int l, int r, set<string>& uniquePermutations) {
 		}
 	}
 }
-set<string> uniquePermutations;
 
-permute(s, 0, n - 1, uniquePermutations);
-
-cout << uniquePermutations.size() << endl;
-for (const string& permutation : uniquePermutations) {
-	cout << permutation << endl;
+void setOfPermute(string& s, int n) {
+	set<string> uniquePermutations;
+	permute(s, 0, n - 1, uniquePermutations);
+	cout << uniquePermutations.size() << endl;
+	for (const string& permutation : uniquePermutations) {
+		cout << permutation << endl;
+	}
 }
 */
+
 
 void solve() {
 
@@ -154,7 +158,7 @@ int main()
 {
 	GET_FASTER;
 	int t = 1;
-	cin >> t;
+	//cin >> t;
 	for (ll i = 1; i <= t; i++) {
 		//cout << "Case " << i << ": ";
 		solve();
