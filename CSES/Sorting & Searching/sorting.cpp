@@ -18,14 +18,15 @@ typedef vector<int> vi;
 typedef pair<int, int> pi;
 
 void solve() {
-	
+	int n;
+	cin>>n;
 
 }
 int main()
 {
 	GET_FASTER;
 	int t = 1;
-	//cin >> t;
+	cin >> t;
 	for (ll i = 1; i <= t; i++) {
 		//cout << "Case " << i << ": ";
 		solve();
