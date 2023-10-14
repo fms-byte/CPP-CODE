@@ -69,7 +69,8 @@ void calPath(int r, int c) {
 
 
 void solve() {
-
+	calPath(0, 0);
+	cout << paths << endl;
 
 }
 int main()
@@ -79,9 +80,7 @@ int main()
 	//cin >> t;
 	for (ll i = 1; i <= t; i++) {
 		//cout << "Case " << i << ": ";
-		//solve();
-		calPath(0, 0);
-		cout << paths << endl;
+		solve();
 	}
 	return 0;
 }
