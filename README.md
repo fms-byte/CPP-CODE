@@ -1,10 +1,32 @@
-# CPP-CODE
+# Problem Solving Repository
 
-In this Repo, I will save my solved problem's source code from different Online Judge like (CodeForces, Codechef, LeetCode, CSES etc..)
+## Overview
 
-I have almost solved 700+ problems in different Online Judge since 2020. But I didn't save my source code in any place. So, I decided to save my source code in this Repo. That's why I will save my source code from Dec 2023.
+Welcome to my problem-solving repository! Here, I store the source code of problems I've solved on various online judges, including CodeForces, Codechef, LeetCode, CSES, and more. I started this repository in December 2023 and aim to solve at least 5 problems per day.
 
-I will try to solve at least 5 problems per day. And I will try to solve all the problems from different Online Judge.
+## Statistics
+
+- Total Problems Solved: 700+
+- Started: December 2023
+
+## Folder Structure
+
+The repository is organized by the name of the online judge, and within each judge's folder, you'll find solutions categorized by problem difficulty or topic.
+
+
+## Daily Progress
+
+I commit to solving a minimum of 5 problems per day and will track my progress here. This will serve as both a log of my journey and a motivational tool.
+
+## Contribution
+
+Feel free to contribute by suggesting improvements, adding solutions, or sharing your insights on any problem. Open issues or pull requests to collaborate!
+
+## Acknowledgments
+
+I draw inspiration from the coding community and appreciate the wealth of knowledge available online. Special thanks to my Seniors, Mentors and Teachers for their guidance.
+
+Happy coding!
 
 ## Online Judge List
 1. CodeForces
