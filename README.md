@@ -2,7 +2,7 @@
 
 ## Overview
 
-Welcome to my problem-solving repository! Here, I store the source code of problems I've solved on various online judges, including CodeForces, Codechef, LeetCode, CSES, and more. I started this repository in December 2023 and aim to solve at least 5 problems per day.
+Welcome to my problem-solving repository! Here, I store the source code of problems I've solved on various online judges, including CodeForces, Codechef, LeetCode, CSES, and more. Unfortunately, I didn't start this repository until I had already solved a few hundred problems, so the commit history doesn't reflect my entire journey. However, I will continue to update this repository as I solve more problems from now on (DEC 2023) and will try to keep the commit history as accurate as possible. I hope this repository will be useful to us (me & you) in some way, whether it be for learning, inspiration, or reference.
 
 ## Statistics
 
