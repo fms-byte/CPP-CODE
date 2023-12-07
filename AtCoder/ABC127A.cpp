@@ -22,12 +22,15 @@ const ll mn = LLONG_MIN;
 
 
 void solve() {
-	int n,k;
-    cin>>n>>k;
-    string s;
-    cin>>s;
-    s[k-1]=s[k-1]+32;
-    cout<<s<<endl;
+	int a,b;
+    cin>>a>>b;
+    if(a>=13){
+        cout<<b<<endl;
+    }else if(a>=6 && a<=12){
+        cout<<b/2<<endl;
+    }else{
+        cout<<0<<endl;
+    }
 }
 
 int main()
