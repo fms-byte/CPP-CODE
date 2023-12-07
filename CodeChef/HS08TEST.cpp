@@ -22,7 +22,19 @@ const ll mn = LLONG_MIN;
 
 
 void solve() {
-	
+    //cout.precision(2);
+	int a;
+    float b;
+    cin>>a>>b;
+    if(a % 5 ==0){
+        if(a+0.5<=b){
+            cout<<fixed<<setprecision(2)<<b-a-0.5<<endl;
+        }else{
+            cout<<fixed<<setprecision(2)<<b<<endl;
+        }
+    }else{
+        cout<<fixed<<setprecision(2)<<b<<endl;
+    }
 }
 
 int main()

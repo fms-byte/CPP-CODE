@@ -22,7 +22,18 @@ const ll mn = LLONG_MIN;
 
 
 void solve() {
-	
+    int n;
+    cin >> n;
+    vector<ll> v(n);
+    for (int i = 0; i < n; i++) {
+        cin >> v[i];
+    }
+    Sort(v);
+    ll ans = 0;
+    for (int i = 0; i < n; i++) {
+        ans = max(ans, v[i] * (n - i));
+    }
+    cout << ans << endl;
 }
 
 int main()

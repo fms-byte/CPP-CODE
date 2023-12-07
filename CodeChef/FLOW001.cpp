@@ -22,14 +22,16 @@ const ll mn = LLONG_MIN;
 
 
 void solve() {
-	
+    int a, b;
+    cin >> a >> b;
+    cout << a + b << endl;
 }
 
 int main()
 {
 	GET_FASTER;
 	int t = 1;
-	//cin >> t;
+	cin >> t;
 	for (ll i = 1; i <= t; i++) {
 		//cout << "Case " << i << ": ";
 		solve();
