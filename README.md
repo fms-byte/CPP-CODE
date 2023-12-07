@@ -6,7 +6,7 @@ Welcome to my problem-solving repository! Here, I store the source code of probl
 
 ## Statistics
 
-- Total Problems Solved: 700+
+- Total Problems Solved: 700+ since 2020
 - Started: December 2023
 
 ## Folder Structure
