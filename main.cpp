@@ -22,7 +22,9 @@ const ll mn = LLONG_MIN;
 
 
 void solve() {
-	cout<<"Hello, world!"<<endl;
+	int n;
+	cin>>n;
+	cout<<n<<endl;
 }
 
 int main()
