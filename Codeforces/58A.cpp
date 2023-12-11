@@ -5,51 +5,45 @@ using namespace std;
 #define endl '\n'
 #define nline cout<<'\n'
 typedef long long int ll;
+typedef double ld;
 typedef vector<int> vi;
 typedef pair<int, int> pi;
-#define F first
-#define S second
+#define fi first
+#define se second
 #define pb push_back
 #define mp make_pair
 #define all(x) begin(x), end(x)
-#define ld double
 #define Sort(v) sort(v.begin(),v.end());
 #define Rev(v) reverse(v.begin(),v.end());
-const int N = 1e6 + 5;
+
 const ll MOD = 1e9 + 7;
 const ll mx = LLONG_MAX;
 const ll mn = LLONG_MIN;
 
+int src(string& s, int start, char ch){
+    for(int i=start; i<s.size(); i++){
+        if(s[i]==ch){
+            return i;
+        }
+    }
+    return -1;
+}
 
 void solve() {
-	char ch[3][3];
-    char ans = 'D';
-    int r=-1,c=-1;
-    string word = "";
+    string s;
+    cin>>s;
 
-    for (int i = 0; i < 3; i++){
-        for(int j=0;j<3;j++){
-            cin>>ch[i][j];            
-            if(ch[i][j] < ans){
-                ans = ch[i][j];
-                r = i;
-                c = j;
-            }
-        }
-    }
+    int h_index= src(s, 0, 'h');
+    int e_index= src(s, h_index+1, 'e');
+    int l_index_1= src(s, e_index+1, 'l');
+    int l_index_2= src(s, l_index_1+1, 'l');
+    int o_index= src(s, l_index_2+1, 'o');
 
-    word += ch[r][c];
-    for (int i = 0; i < 3; i++){
-        for(int j = 0; j < 3; j++){
-            if(i == r && j == c){
-                continue;
-            }
-            if(ch[r][c+1]){}
-
-        }
-    }
-    cout<<word<<endl;
-    
+    if(h_index<e_index && e_index<l_index_1 && l_index_1<l_index_2 && l_index_2<o_index){
+        cout<<"YES"<<endl;
+    }else{
+        cout<<"NO"<<endl;
+    }    
 }
 
 int main()
