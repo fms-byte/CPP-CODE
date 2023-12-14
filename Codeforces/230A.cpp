@@ -22,7 +22,27 @@ const ll mx = LLONG_MAX;
 const ll mn = LLONG_MIN;
 
 void solve() {
-    
+    int n;
+    ll s;
+    cin>>s>>n;
+    int strength,bonus;
+    vector<pi> vp;
+    for (int i = 0; i < n; i++)
+    {
+        cin>>strength>>bonus;
+        vp.pb(mp(strength,bonus));
+    }
+    vec_sort(vp);
+    for(int i=0; i< vp.size();i++){
+        if(s>vp[i].fi){
+            s+=vp[i].se;
+        }else{
+            cout<<"NO"<<endl;
+            return;
+        }
+        //cout<<vp[i].fi<<" "<<vp[i].se<<endl;
+    }
+    cout<<"YES"<<endl;
 }
 
 int main()

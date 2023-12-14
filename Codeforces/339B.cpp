@@ -22,7 +22,29 @@ const ll mx = LLONG_MAX;
 const ll mn = LLONG_MIN;
 
 void solve() {
-    
+    int houses, tasks;
+    cin>>houses>>tasks;
+    int current_house, next_house, house_index[tasks+1];
+
+    for (int house = 1; house <= tasks; house++){
+        cin>>house_index[house];
+    }
+
+    current_house = 1;
+    ll time = 0;
+
+    for (int house = 1; house <= tasks; house++){
+        next_house = house_index[house];
+        if(current_house>next_house){
+            time += next_house - current_house + houses;
+        }
+        else{
+            time += next_house - current_house;
+        }
+        current_house = next_house;
+    }
+
+    cout<<time<<endl; 
 }
 
 int main()

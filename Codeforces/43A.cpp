@@ -22,7 +22,29 @@ const ll mx = LLONG_MAX;
 const ll mn = LLONG_MIN;
 
 void solve() {
-    
+	int lines;
+	cin >> lines;
+	string goals[lines];
+	string first_team_goal, second_team_goal;
+	for (int goal = 0; goal < lines; goal++) {
+		cin >> goals[goal];
+	}
+	first_team_goal = goals[0];
+	int team_1 = 0, team_2 = 0;
+	for (int goal = 0; goal < lines; goal++) {
+		if (goals[goal] == first_team_goal) {
+			team_1++;
+		} else {
+			second_team_goal = goals[goal];
+		}
+	}
+
+	team_2 = lines - team_1;
+	if (team_1 > team_2) {
+		cout << first_team_goal << endl;
+	} else if (team_1 < team_2) {
+		cout << second_team_goal << endl;
+	}
 }
 
 int main()

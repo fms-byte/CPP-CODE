@@ -1,14 +1,7 @@
 {
-	"folders": [
-		{
-			"path": "."
-		}
-	],
-	"settings": {
-		"files.associations": {
-			"*.embeddedhtml": "html",
-			"ostream": "cpp",
-			"iostream": "cpp"
-		}
-	}
+    "folders": [
+        {
+            "path": "."
+        }
+    ]
 }
