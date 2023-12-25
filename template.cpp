@@ -18,15 +18,14 @@ typedef pair<int, int> pi;
 #define vec_sort(v) 	sort(v.begin(),v.end());
 #define Rev(v) 			reverse(v.begin(),v.end());
 #define show(n) 		cout << n << endl;
+#define show2(n,m)		cout << n <<" "<<m<<endl;
 #define yes 			show("YES");
 #define no 				show("NO");
 #define loop(i,n)      	for (int i = 0; i < n; i++)
 #define forr(i,a,b)    	for(ll i=a;i<=b;i++)
-
 const ll mod = 1e9 + 7;
 const ll mx = LLONG_MAX;
 const ll mn = LLONG_MIN;
-
 ll mul_inv(ll i) {if (i == 1) return 1; return (mod - ((mod / i) * mul_inv(mod % i)) % mod) % mod;}
 ll mod_mul(ll a, ll b) {a = a % mod; b = b % mod; return (((a * b) % mod) + mod) % mod;}
 ll mod_add(ll a, ll b) {a = a % mod; b = b % mod; return (((a + b) % mod) + mod) % mod;}
