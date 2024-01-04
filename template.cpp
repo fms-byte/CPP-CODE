@@ -1,8 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define GET_FASTER ios_base::sync_with_stdio(false);cin.tie(NULL);
-#define endl '\n'
-#define nline cout<<'\n'
 typedef long long int ll;
 typedef double ld;
 typedef unsigned int uint;
@@ -10,21 +7,23 @@ typedef vector<int> vi;
 typedef vector<long long> vlli;
 typedef pair<int, int> pi;
 typedef vector<pi> vpair;
+#define Carry_on_FARHAN ios_base::sync_with_stdio(false);cin.tie(NULL)
+#define endl '\n'
+#define newline cout<<'\n'
 #define fi first
 #define se second
 #define pb push_back
 #define mp make_pair
-#define all(x) begin(x), end(x)
-#define arr_sort(a) sort(a, a+n);
-#define vec_sort(v) sort(v.begin(),v.end());
-#define Rev(v) reverse(v.begin(),v.end());
-#define show(n) cout << n << endl;
-#define show2(n,m) cout << n <<" "<<m<<endl;
-#define show3(n,m,p) cout << n <<" "<<m<<" "<<p<<endl;
-#define show4(n,m,p,o) cout << n <<" "<<m<<" "<<p<<" "<<o<<endl;
-#define yes show("YES");
-#define no show("NO");
-#define loop(a,b) for(ll i = a; i < b; i++)
+#define all(v) v.begin(),v.end()
+#define rall(v) v.rbegin(),v.rend()
+#define Rev(v) reverse(v.begin(),v.end())
+#define show(n) cout << n << endl
+#define show2(n,m) cout << n <<" "<<m<<endl
+#define show3(n,m,p) cout << n <<" "<<m<<" "<<p<<endl
+#define show4(n,m,p,o) cout << n <<" "<<m<<" "<<p<<" "<<o<<endl
+#define YES show("YES")
+#define NO show("NO")
+#define loop(i,a,b) for(ll i = a; i < b; i++)
 const ll mod = 1e9 + 7;
 const ll mx = LLONG_MAX;
 const ll mn = LLONG_MIN;
@@ -38,6 +37,31 @@ ll pwr(ll a, ll b) {a %= mod; ll res = 1; while (b > 0) {if (b & 1) res = (res *
 
 
 /*
+vector<ll> primeFactors(ll n) { //prime factorization unique primes
+	vector<ll> factors;
+	set<int> st;
+	while (n % 2 == 0) {
+		st.insert(2);
+		//factors.pb(2);
+		n = n / 2;
+	}
+
+	for (int i = 3; i <= sqrt(n); i = i + 2) {
+		while (n % i == 0) {
+			//factors.pb(i);
+			st.insert(i);
+			n = n / i;
+		}
+	}
+	if (n > 2) st.insert(n);
+
+	for (auto i : st) {
+		factors.pb(i);
+	}
+	return factors;
+}
+
+
 int dp[N][7];
 
 void Sieve(int n)//prime numbers from 0 to n
@@ -61,7 +85,7 @@ void Sieve(int n)//prime numbers from 0 to n
 //cout << cnt << " Prime Nmbers in range 0 to " << n << endl;
 }
 
-void primeFactors(int n) //factorization (divisors of n)
+void divisors(int n) //(divisors of n)
 {
 	int cnt = 2;
 	cout << 1 << " ";
@@ -75,7 +99,7 @@ void primeFactors(int n) //factorization (divisors of n)
 	cout << cnt << endl;
 }
 
-vector<ll> all_divisor(ll n, ll l) { //factorization (better soln)
+vector<ll> all_divisor(ll n, ll l) { // (better soln)
 	vector<ll> divisors;
 	if (l < 2)
 		divisors.pb(1);
